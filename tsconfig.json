@@ -38,6 +38,6 @@
     ".next/types/**/*.ts"
   ],
   "exclude": [
-    "tests", "playwright-report", "node_modules"
+    "__tests__", "playwright-report", "node_modules"
   ]
 }

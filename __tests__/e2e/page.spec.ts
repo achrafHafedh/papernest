@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
-test("has title", async ({ page }) => {
+test("has text", async ({ page }) => {
   await page.goto("http://localhost:3000/");
 
-  await expect(page).toHaveTitle("Test Papernest");
+  await expect(page.locator("text=Salut !")).toBeVisible();
 });

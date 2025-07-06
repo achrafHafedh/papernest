@@ -6,6 +6,11 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: ["./.storybook/vitest.setup.ts"],
-    exclude: ["node_modules", "tests/e2e/**", "playwright.config.ts", "e2e/**"],
+    exclude: [
+      "node_modules",
+      "__tests__/e2e/**",
+      "playwright.config.ts",
+      "e2e/**",
+    ],
   },
 });
