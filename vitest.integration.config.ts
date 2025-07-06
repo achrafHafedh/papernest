@@ -4,6 +4,6 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     globals: true,
-    include: ["src/**/*.integration.test.tsx"],
+    include: ["tests/integration/*.integration.test.tsx"],
   },
 });

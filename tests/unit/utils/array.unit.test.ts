@@ -1,4 +1,4 @@
-import { reverse } from "./array";
+import { reverse } from "../../../src/lib/utils/array";
 
 describe("reverse array of number", () => {
   const array = [7, 3];
