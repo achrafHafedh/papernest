@@ -1,4 +1,3 @@
-// vitest.config.ts
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
@@ -6,11 +5,6 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: ["./.storybook/vitest.setup.ts"],
-    exclude: [
-      "node_modules",
-      "__tests__/e2e/**",
-      "playwright.config.ts",
-      "e2e/**",
-    ],
+    exclude: ["node_modules", "playwright.config.ts", "e2e/**"],
   },
 });
