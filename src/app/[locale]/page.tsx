@@ -1,11 +1,17 @@
+import QuestionAnswer from "@/components/QuestionAnswer/QuestionAnswer";
+import Welcome from "@/components/Welcome/Welcome";
 import { useTranslations } from "next-intl";
-// import { Link } from "@/lib/i18n/navigation";
+import { languages } from "@/constants";
 
 export default function HomePage() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations();
   return (
     <div>
-      <h1 className="text-3xl">{t("title")}</h1>
+      <Welcome
+        title={t("HomePage.welcome.title")}
+        text={t("HomePage.welcome.text")}
+      />
+      <QuestionAnswer question={t("HomePage.question")} answer={languages} />
     </div>
   );
 }

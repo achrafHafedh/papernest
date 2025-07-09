@@ -20,7 +20,12 @@ export default function SelectBox({
   label = "",
 }: SelectBoxProps) {
   return (
-    <Listbox value={value} onChange={onChange}>
+    <Listbox
+      data-testid="container-selectbox-languages"
+      value={value}
+      onChange={onChange}
+      as="div"
+    >
       {label && <Label className="block text-sm font-medium">{label}</Label>}
       <div className="relative mt-2">
         <ListboxButton className="grid w-full cursor-pointer grid-cols-1 rounded-md bg-white py-1.5 pr-2 pl-3 text-left outline sm:text-sm">

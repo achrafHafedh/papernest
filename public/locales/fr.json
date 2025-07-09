@@ -1,5 +1,12 @@
 {
   "HomePage": {
-    "title": "Salut !"
+    "welcome": {
+      "title": "Bienvenue sur papernest !",
+      "text": "Simplifiez votre quotidien. Dites adieu au stress administratif."
+    },
+    "question": "Sélectionnez votre pays de résidence"
+  },
+  "ComparatorPage": {
+    "text": "Salut !"
   }
 }

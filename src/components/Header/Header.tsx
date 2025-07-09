@@ -1,19 +1,23 @@
 "use client";
 
+import React from "react";
 import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import Image from "next/image";
 
-import { languages } from "@/constants";
-import { SelectOption } from "@/types";
+import { languages } from "../../constants";
+import { SelectOption } from "../../types";
+import { Link, usePathname } from "../../i18n/navigation";
+
 import SelectBox from "../SelectBox/SelectBox";
 
 export default function Header() {
   const router = useRouter();
   const locale = useLocale();
+  const pathname = usePathname();
 
-  const handleChange = (value: SelectOption) => {
-    router.push(`/${value.value}`);
+  const handleChange = ({ value }: SelectOption) => {
+    router.push(`/${value}/${pathname}`);
   };
 
   const getSelectedLang = (): SelectOption =>
@@ -21,8 +25,10 @@ export default function Header() {
 
   return (
     <div className="flex justify-between items-center w-full px-3 lg:px-30 py-3 shadow-sm">
-      <div className="border-r border-blue pr-5">
-        <Image src="/images/logo.svg" alt="logo" width={160} height={160} />
+      <div className="border-r border-indigo-300 pr-5">
+        <Link href="/">
+          <Image src="/images/logo.svg" alt="logo" width={160} height={30} />
+        </Link>
       </div>
       <div className="w-[150px]">
         <SelectBox

@@ -1,10 +1,9 @@
-import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
+import { NextIntlClientProvider } from "next-intl";
 import Header from "@/components/Header/Header";
 
-import "../global.css";
-import SeoHead from "../Head";
+import SeoHead from "./Head";
+
+import "../../styles/global.css";
 
 export default async function LocaleLayout({
   children,
@@ -14,9 +13,6 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
 
   return (
     <html lang={locale}>
@@ -24,7 +20,9 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider>
           <Header />
-          <main className="flex-grow">{children}</main>
+          <main className="container max-w-2xl mx-auto py-16 px-4">
+            {children}
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>
