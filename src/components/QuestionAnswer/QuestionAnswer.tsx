@@ -22,7 +22,7 @@ export default function QuestionAnswer({
             className="border border-gray-300 mr-5 rounded-tl-2xl rounded-br-2xl cursor-pointer hover:border-gray-400 duration-300"
           >
             <Link href={`/country/${item.value}`}>
-              <div data-testid={item.label} className="p-14">
+              <div data-testid={item.label} className="p-3 lg:p-14">
                 <Image
                   src={item?.src || ""}
                   alt={item.label}
