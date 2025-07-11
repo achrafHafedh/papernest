@@ -2,21 +2,13 @@ import { NextResponse } from "next/server";
 import path from "path";
 import { promises as fs } from "fs";
 
-type Params = {
-  params: {
-    country: string;
-  };
-};
-
-export async function GET(request: Request, { params }: Params) {
-  const { country } = await params;
-
+export async function GET() {
   const filePath = path.join(
     process.cwd(),
     "public",
     "mock",
-    country,
-    `offers.json`
+    "it",
+    `providers.json`
   );
 
   try {

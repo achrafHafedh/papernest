@@ -10,6 +10,7 @@ type Props = {
 
 export default async function Page({ params }: Props) {
   const { country } = await params;
+
   const offers = getOffers(country);
   const providers = getProviders(country);
 
