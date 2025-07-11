@@ -22,7 +22,7 @@ describe("QuestionAnswer Component", () => {
 
     languages.forEach(({ label, value, src }) => {
       const link = screen.getByRole("link", { name: label });
-      expect(link).toHaveAttribute("href", `/country/${value}`);
+      expect(link).toHaveAttribute("href", `/offers/${value}`);
 
       const img = screen.getByAltText(label);
       expect(img).toHaveAttribute("src", src);

@@ -71,8 +71,8 @@ describe("Header component", () => {
     render(<Header />);
     const user = userEvent.setup();
 
-    const button = screen.getByTestId("selectbox-languages");
-    await user.click(button);
+    const selectbox = screen.getByTestId("selectbox-languages");
+    await user.click(selectbox);
 
     const italianOption = screen.getByText("Italiano");
     await user.click(italianOption);

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "es_001",
+    "slug": "energia-espana",
+    "display_name": "Energía España",
+    "country": "spain"
+  },
+  {
+    "id": "es_002",
+    "slug": "sol-power",
+    "display_name": "Sol Power",
+    "country": "spain"
+  },
+  {
+    "id": "es_003",
+    "slug": "energia-verde-es",
+    "display_name": "Energía Verde",
+    "country": "spain"
+  },
+  {
+    "id": "es_004",
+    "slug": "power-madrid",
+    "display_name": "Power Madrid",
+    "country": "spain"
+  },
+  {
+    "id": "es_005",
+    "slug": "energia-libre",
+    "display_name": "Energía Libre",
+    "country": "spain"
+  },
+  {
+    "id": "es_006",
+    "slug": "voltios-spain",
+    "display_name": "Voltios Spain",
+    "country": "spain"
+  },
+  {
+    "id": "es_007",
+    "slug": "energia-nueva",
+    "display_name": "Energía Nueva",
+    "country": "spain"
+  },
+  {
+    "id": "es_008",
+    "slug": "electrica-moderna",
+    "display_name": "Eléctrica Moderna",
+    "country": "spain"
+  },
+  {
+    "id": "es_009",
+    "slug": "energia-azul",
+    "display_name": "Energía Azul",
+    "country": "spain"
+  },
+  {
+    "id": "es_010",
+    "slug": "power-cataluna",
+    "display_name": "Power Cataluña",
+    "country": "spain"
+  },
+  {
+    "id": "es_011",
+    "slug": "energia-sostenible",
+    "display_name": "Energía Sostenible",
+    "country": "spain"
+  },
+  {
+    "id": "es_012",
+    "slug": "watt-espana",
+    "display_name": "Watt España",
+    "country": "spain"
+  }
+]

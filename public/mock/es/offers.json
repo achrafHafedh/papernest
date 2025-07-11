@@ -1,0 +1,86 @@
+[
+  {
+    "id": "offer_es_001_01",
+    "slug": "energia-espana-hogar",
+    "name": "Energía Hogar",
+    "description": "Electricidad para el hogar con precio fijo garantizado",
+    "provider_id": "es_001",
+    "consumption_pricing": 0.195,
+    "subscription_cost": 120.0,
+    "metadata": {
+      "energy_type": "mixed",
+      "contract_duration": "24 months",
+      "price_guarantee": "fixed"
+    }
+  },
+  {
+    "id": "offer_es_001_02",
+    "slug": "energia-espana-verde",
+    "name": "Energía Verde",
+    "description": "Electricidad 100% renovable certificada",
+    "provider_id": "es_001",
+    "consumption_pricing": 0.208,
+    "subscription_cost": 145.0,
+    "metadata": {
+      "energy_type": "green",
+      "contract_duration": "36 months",
+      "price_guarantee": "fixed"
+    }
+  },
+  {
+    "id": "offer_es_001_03",
+    "slug": "energia-espana-flexible",
+    "name": "Energía Flexible",
+    "description": "Tarifa indexada sin permanencia",
+    "provider_id": "es_001",
+    "consumption_pricing": 0.182,
+    "subscription_cost": 95.0,
+    "metadata": {
+      "energy_type": "mixed",
+      "contract_duration": "no commitment",
+      "price_guarantee": "indexed"
+    }
+  },
+  {
+    "id": "offer_es_002_01",
+    "slug": "sol-power-basico",
+    "name": "Sol Básico",
+    "description": "Electricidad básica al mejor precio",
+    "provider_id": "es_002",
+    "consumption_pricing": 0.188,
+    "subscription_cost": 110.0,
+    "metadata": {
+      "energy_type": "mixed",
+      "contract_duration": "12 months",
+      "price_guarantee": "fixed"
+    }
+  },
+  {
+    "id": "offer_es_002_02",
+    "slug": "sol-power-solar",
+    "name": "Sol Solar",
+    "description": "Energía solar pura para tu hogar",
+    "provider_id": "es_002",
+    "consumption_pricing": 0.215,
+    "subscription_cost": 155.0,
+    "metadata": {
+      "energy_type": "green",
+      "contract_duration": "36 months",
+      "price_guarantee": "fixed"
+    }
+  },
+  {
+    "id": "offer_es_002_03",
+    "slug": "sol-power-inteligente",
+    "name": "Sol Inteligente",
+    "description": "Tarifa inteligente que se adapta a tu consumo",
+    "provider_id": "es_002",
+    "consumption_pricing": 0.192,
+    "subscription_cost": 125.0,
+    "metadata": {
+      "energy_type": "mixed",
+      "contract_duration": "18 months",
+      "price_guarantee": "dynamic"
+    }
+  }
+]

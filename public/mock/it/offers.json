@@ -1,0 +1,86 @@
+[
+  {
+    "id": "offer_it_001_01",
+    "slug": "energia-italiana-casa",
+    "name": "Casa Italiana",
+    "description": "Offerta elettrica per la casa con prezzo fisso",
+    "provider_id": "it_001",
+    "consumption_pricing": 0.215,
+    "subscription_cost": 135.0,
+    "metadata": {
+      "energy_type": "mixed",
+      "contract_duration": "24 months",
+      "price_guarantee": "fixed"
+    }
+  },
+  {
+    "id": "offer_it_001_02",
+    "slug": "energia-italiana-verde",
+    "name": "Verde Italiana",
+    "description": "Energia 100% rinnovabile per un futuro sostenibile",
+    "provider_id": "it_001",
+    "consumption_pricing": 0.228,
+    "subscription_cost": 160.0,
+    "metadata": {
+      "energy_type": "green",
+      "contract_duration": "36 months",
+      "price_guarantee": "fixed"
+    }
+  },
+  {
+    "id": "offer_it_001_03",
+    "slug": "energia-italiana-flex",
+    "name": "Flex Italiana",
+    "description": "Tariffa flessibile indicizzata al mercato",
+    "provider_id": "it_001",
+    "consumption_pricing": 0.205,
+    "subscription_cost": 110.0,
+    "metadata": {
+      "energy_type": "mixed",
+      "contract_duration": "no commitment",
+      "price_guarantee": "indexed"
+    }
+  },
+  {
+    "id": "offer_it_002_01",
+    "slug": "volta-power-standard",
+    "name": "Volta Standard",
+    "description": "Elettricità a prezzo competitivo per tutti",
+    "provider_id": "it_002",
+    "consumption_pricing": 0.208,
+    "subscription_cost": 125.0,
+    "metadata": {
+      "energy_type": "mixed",
+      "contract_duration": "24 months",
+      "price_guarantee": "fixed"
+    }
+  },
+  {
+    "id": "offer_it_002_02",
+    "slug": "volta-power-solar",
+    "name": "Volta Solar",
+    "description": "Energia solare certificata per la tua casa",
+    "provider_id": "it_002",
+    "consumption_pricing": 0.22,
+    "subscription_cost": 150.0,
+    "metadata": {
+      "energy_type": "green",
+      "contract_duration": "36 months",
+      "price_guarantee": "fixed"
+    }
+  },
+  {
+    "id": "offer_it_002_03",
+    "slug": "volta-power-notte",
+    "name": "Volta Notte",
+    "description": "Tariffa bioraria conveniente per le ore notturne",
+    "provider_id": "it_002",
+    "consumption_pricing": 0.195,
+    "subscription_cost": 130.0,
+    "metadata": {
+      "energy_type": "mixed",
+      "contract_duration": "18 months",
+      "price_guarantee": "dual_rate"
+    }
+  }
+]

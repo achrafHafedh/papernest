@@ -1,0 +1,74 @@
+[
+  {
+    "id": "it_001",
+    "slug": "energia-italiana",
+    "display_name": "Energia Italiana",
+    "country": "italy"
+  },
+  {
+    "id": "it_002",
+    "slug": "volta-power",
+    "display_name": "Volta Power",
+    "country": "italy"
+  },
+  {
+    "id": "it_003",
+    "slug": "sole-energia",
+    "display_name": "Sole Energia",
+    "country": "italy"
+  },
+  {
+    "id": "it_004",
+    "slug": "power-italia",
+    "display_name": "Power Italia",
+    "country": "italy"
+  },
+  {
+    "id": "it_005",
+    "slug": "energia-verde",
+    "display_name": "Energia Verde",
+    "country": "italy"
+  },
+  {
+    "id": "it_006",
+    "slug": "elettrico-blu",
+    "display_name": "Elettrico Blu",
+    "country": "italy"
+  },
+  {
+    "id": "it_007",
+    "slug": "energia-nuova",
+    "display_name": "Energia Nuova",
+    "country": "italy"
+  },
+  {
+    "id": "it_008",
+    "slug": "watt-italia",
+    "display_name": "Watt Italia",
+    "country": "italy"
+  },
+  {
+    "id": "it_009",
+    "slug": "energia-moderna",
+    "display_name": "Energia Moderna",
+    "country": "italy"
+  },
+  {
+    "id": "it_010",
+    "slug": "corrente-libera",
+    "display_name": "Corrente Libera",
+    "country": "italy"
+  },
+  {
+    "id": "it_011",
+    "slug": "energia-pulita",
+    "display_name": "Energia Pulita",
+    "country": "italy"
+  },
+  {
+    "id": "it_012",
+    "slug": "power-sicilia",
+    "display_name": "Power Sicilia",
+    "country": "italy"
+  }
+]

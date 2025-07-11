@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fr_001",
+    "slug": "voltaire-energie",
+    "display_name": "Voltaire Énergie",
+    "country": "france"
+  },
+  {
+    "id": "fr_002",
+    "slug": "lumiere-verte",
+    "display_name": "Lumière Verte",
+    "country": "france"
+  },
+  {
+    "id": "fr_003",
+    "slug": "energie-bleue",
+    "display_name": "Énergie Bleue",
+    "country": "france"
+  },
+  {
+    "id": "fr_004",
+    "slug": "power-france",
+    "display_name": "Power France",
+    "country": "france"
+  },
+  {
+    "id": "fr_005",
+    "slug": "eco-watts",
+    "display_name": "Eco-Watts",
+    "country": "france"
+  },
+  {
+    "id": "fr_006",
+    "slug": "france-solaire",
+    "display_name": "France Solaire",
+    "country": "france"
+  },
+  {
+    "id": "fr_007",
+    "slug": "energie-plus",
+    "display_name": "Énergie Plus",
+    "country": "france"
+  },
+  {
+    "id": "fr_008",
+    "slug": "nouvelle-energie",
+    "display_name": "Nouvelle Énergie",
+    "country": "france"
+  },
+  {
+    "id": "fr_009",
+    "slug": "dynamo-france",
+    "display_name": "Dynamo France",
+    "country": "france"
+  },
+  {
+    "id": "fr_010",
+    "slug": "electro-ciel",
+    "display_name": "Électro-Ciel",
+    "country": "france"
+  },
+  {
+    "id": "fr_011",
+    "slug": "energie-libre",
+    "display_name": "Énergie Libre",
+    "country": "france"
+  },
+  {
+    "id": "fr_012",
+    "slug": "watt-eco",
+    "display_name": "Watt Éco",
+    "country": "france"
+  }
+]
