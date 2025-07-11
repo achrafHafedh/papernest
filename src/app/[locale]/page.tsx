@@ -8,10 +8,10 @@ export default function HomePage() {
   return (
     <div>
       <Welcome
-        title={t("HomePage.welcome.title")}
-        text={t("HomePage.welcome.text")}
+        title={t("homePage.welcome.title")}
+        text={t("homePage.welcome.text")}
       />
-      <QuestionAnswer question={t("HomePage.question")} answer={languages} />
+      <QuestionAnswer question={t("homePage.question")} answer={languages} />
     </div>
   );
 }

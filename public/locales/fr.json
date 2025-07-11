@@ -1,12 +1,20 @@
 {
-  "HomePage": {
+  "homePage": {
     "welcome": {
       "title": "Bienvenue sur papernest !",
       "text": "Simplifiez votre quotidien. Dites adieu au stress administratif."
     },
     "question": "Sélectionnez votre pays de résidence"
   },
-  "ComparatorPage": {
-    "text": "Salut !"
+  "offersPage": {
+    "offer": {
+      "logo": "logo",
+      "year": "an",
+      "engagement": "Engagement de",
+      "month": "mois",
+      "consommation": "Consommation estimée",
+      "energy": "Type d'énergie",
+      "guarantee": "Garantie du prix"
+    }
   }
 }

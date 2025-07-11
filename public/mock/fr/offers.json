@@ -3,168 +3,408 @@
     "id": "offer_fr_001_01",
     "slug": "voltaire-energie-classique",
     "name": "Voltaire Classique",
-    "description": "Offre d'électricité standard avec prix fixe pendant 2 ans",
+    "description": {
+      "fr": "Offre d'électricité standard avec prix fixe pendant 2 ans",
+      "it": "Offerta elettrica standard con prezzo fisso per 2 anni",
+      "es": "Oferta de electricidad estándar con precio fijo durante 2 años"
+    },
     "provider_id": "fr_001",
     "consumption_pricing": 0.1845,
     "subscription_cost": 120.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "24 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "fr": "mixte",
+        "it": "mista",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "fr": "24 mois",
+        "it": "24 mesi",
+        "es": "24 meses"
+      },
+      "price_guarantee": {
+        "fr": "fixe",
+        "it": "fissa",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 73.8,
+      "month": 6.15
     }
   },
   {
     "id": "offer_fr_001_02",
     "slug": "voltaire-energie-verte",
     "name": "Voltaire Vert",
-    "description": "Électricité 100% verte d'origine renouvelable",
+    "description": {
+      "fr": "Électricité 100% verte d'origine renouvelable",
+      "it": "Elettricità 100% verde da fonti rinnovabili",
+      "es": "Electricidad 100% verde de origen renovable"
+    },
     "provider_id": "fr_001",
     "consumption_pricing": 0.1975,
     "subscription_cost": 135.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "36 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "fr": "verte",
+        "it": "verde",
+        "es": "verde"
+      },
+      "contract_duration": {
+        "fr": "36 mois",
+        "it": "36 mesi",
+        "es": "36 meses"
+      },
+      "price_guarantee": {
+        "fr": "fixe",
+        "it": "fissa",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 79.0,
+      "month": 6.58
     }
   },
   {
     "id": "offer_fr_001_03",
     "slug": "voltaire-energie-flexible",
     "name": "Voltaire Flexible",
-    "description": "Tarif indexé sur le marché, sans engagement",
+    "description": {
+      "fr": "Tarif indexé sur le marché, sans engagement",
+      "it": "Tariffa indicizzata al mercato, senza impegno",
+      "es": "Tarifa indexada al mercado, sin compromiso"
+    },
     "provider_id": "fr_001",
     "consumption_pricing": 0.172,
     "subscription_cost": 95.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "no commitment",
-      "price_guarantee": "indexed"
+      "energy_type": {
+        "fr": "mixte",
+        "it": "mista",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "fr": "sans engagement",
+        "it": "nessun impegno",
+        "es": "sin compromiso"
+      },
+      "price_guarantee": {
+        "fr": "indexée",
+        "it": "indicizzata",
+        "es": "indexada"
+      }
+    },
+    "estimation": {
+      "year": 68.8,
+      "month": 5.73
     }
   },
   {
     "id": "offer_fr_002_01",
     "slug": "lumiere-verte-eco",
     "name": "Lumière Éco",
-    "description": "Électricité verte à prix réduit pour les foyers économes",
+    "description": {
+      "fr": "Électricité verte à prix réduit pour les foyers économes",
+      "it": "Elettricità verde a prezzo ridotto per famiglie attente al consumo",
+      "es": "Electricidad verde a precio reducido para hogares ahorradores"
+    },
     "provider_id": "fr_002",
     "consumption_pricing": 0.165,
     "subscription_cost": 108.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "12 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "fr": "verte",
+        "it": "verde",
+        "es": "verde"
+      },
+      "contract_duration": {
+        "fr": "12 mois",
+        "it": "12 mesi",
+        "es": "12 meses"
+      },
+      "price_guarantee": {
+        "fr": "fixe",
+        "it": "fissa",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 66.0,
+      "month": 5.5
     }
   },
   {
     "id": "offer_fr_002_02",
     "slug": "lumiere-verte-premium",
     "name": "Lumière Premium",
-    "description": "Offre premium avec électricité verte certifiée et service client dédié",
+    "description": {
+      "fr": "Offre premium avec électricité verte certifiée et service client dédié",
+      "it": "Offerta premium con elettricità verde certificata e servizio clienti dedicato",
+      "es": "Oferta premium con electricidad verde certificada y atención al cliente dedicada"
+    },
     "provider_id": "fr_002",
     "consumption_pricing": 0.21,
     "subscription_cost": 180.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "24 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "fr": "verte",
+        "it": "verde",
+        "es": "verde"
+      },
+      "contract_duration": {
+        "fr": "24 mois",
+        "it": "24 mesi",
+        "es": "24 meses"
+      },
+      "price_guarantee": {
+        "fr": "fixe",
+        "it": "fissa",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 84.0,
+      "month": 7.0
     }
   },
   {
     "id": "offer_fr_002_03",
     "slug": "lumiere-verte-nuit",
     "name": "Lumière Nuit",
-    "description": "Tarif heures creuses avantageux pour optimiser vos consommations",
+    "description": {
+      "fr": "Tarif heures creuses avantageux pour optimiser vos consommations",
+      "it": "Tariffa vantaggiosa nelle ore non di punta per ottimizzare i consumi",
+      "es": "Tarifa de horas valle ventajosa para optimizar tu consumo"
+    },
     "provider_id": "fr_002",
     "consumption_pricing": 0.142,
     "subscription_cost": 125.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "18 months",
-      "price_guarantee": "dual_rate"
+      "energy_type": {
+        "fr": "verte",
+        "it": "verde",
+        "es": "verde"
+      },
+      "contract_duration": {
+        "fr": "18 mois",
+        "it": "18 mesi",
+        "es": "18 meses"
+      },
+      "price_guarantee": {
+        "fr": "bihoraire",
+        "it": "bioraria",
+        "es": "bioraria"
+      }
+    },
+    "estimation": {
+      "year": 56.8,
+      "month": 4.73
     }
   },
   {
     "id": "offer_fr_003_01",
     "slug": "energie-bleue-standard",
     "name": "Bleue Standard",
-    "description": "Offre d'électricité standard avec prix compétitif",
+    "description": {
+      "fr": "Offre d'électricité standard avec prix compétitif",
+      "it": "Offerta elettrica standard con prezzo competitivo",
+      "es": "Oferta de electricidad estándar con precio competitivo"
+    },
     "provider_id": "fr_003",
     "consumption_pricing": 0.178,
     "subscription_cost": 115.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "24 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "fr": "mixte",
+        "it": "mista",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "fr": "24 mois",
+        "it": "24 mesi",
+        "es": "24 meses"
+      },
+      "price_guarantee": {
+        "fr": "fixe",
+        "it": "fissa",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 71.2,
+      "month": 5.93
     }
   },
   {
     "id": "offer_fr_003_02",
     "slug": "energie-bleue-marine",
     "name": "Bleue Marine",
-    "description": "Électricité d'origine éolienne offshore",
+    "description": {
+      "fr": "Électricité d'origine éolienne offshore",
+      "it": "Elettricità da fonte eolica offshore",
+      "es": "Electricidad de origen eólico marino"
+    },
     "provider_id": "fr_003",
     "consumption_pricing": 0.195,
     "subscription_cost": 140.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "36 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "fr": "verte",
+        "it": "verde",
+        "es": "verde"
+      },
+      "contract_duration": {
+        "fr": "36 mois",
+        "it": "36 mesi",
+        "es": "36 meses"
+      },
+      "price_guarantee": {
+        "fr": "fixe",
+        "it": "fissa",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 78.0,
+      "month": 6.5
     }
   },
   {
     "id": "offer_fr_003_03",
     "slug": "energie-bleue-connect",
     "name": "Bleue Connect",
-    "description": "Offre connectée avec suivi en temps réel de votre consommation",
+    "description": {
+      "fr": "Offre connectée avec suivi en temps réel de votre consommation",
+      "it": "Offerta connessa con monitoraggio in tempo reale dei consumi",
+      "es": "Oferta conectada con seguimiento en tiempo real de tu consumo"
+    },
     "provider_id": "fr_003",
     "consumption_pricing": 0.1825,
     "subscription_cost": 130.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "24 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "fr": "mixte",
+        "it": "mista",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "fr": "24 mois",
+        "it": "24 mesi",
+        "es": "24 meses"
+      },
+      "price_guarantee": {
+        "fr": "fixe",
+        "it": "fissa",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 73.0,
+      "month": 6.08
     }
   },
   {
     "id": "offer_fr_004_01",
     "slug": "power-france-basic",
     "name": "Power Basic",
-    "description": "Électricité au meilleur prix pour tous",
+    "description": {
+      "fr": "Électricité au meilleur prix pour tous",
+      "it": "Elettricità al miglior prezzo per tutti",
+      "es": "Electricidad al mejor precio para todos"
+    },
     "provider_id": "fr_004",
     "consumption_pricing": 0.169,
     "subscription_cost": 100.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "12 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "fr": "mixte",
+        "it": "mista",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "fr": "12 mois",
+        "it": "12 mesi",
+        "es": "12 meses"
+      },
+      "price_guarantee": {
+        "fr": "fixe",
+        "it": "fissa",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 67.6,
+      "month": 5.63
     }
   },
   {
     "id": "offer_fr_004_02",
     "slug": "power-france-green",
     "name": "Power Green",
-    "description": "Électricité 100% renouvelable certifiée",
+    "description": {
+      "fr": "Électricité 100% renouvelable certifiée",
+      "it": "Elettricità 100% rinnovabile certificata",
+      "es": "Electricidad 100% renovable certificada"
+    },
     "provider_id": "fr_004",
     "consumption_pricing": 0.189,
     "subscription_cost": 145.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "24 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "fr": "verte",
+        "it": "verde",
+        "es": "verde"
+      },
+      "contract_duration": {
+        "fr": "24 mois",
+        "it": "24 mesi",
+        "es": "24 meses"
+      },
+      "price_guarantee": {
+        "fr": "fixe",
+        "it": "fissa",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 75.6,
+      "month": 6.3
     }
   },
   {
     "id": "offer_fr_004_03",
     "slug": "power-france-smart",
     "name": "Power Smart",
-    "description": "Tarif intelligent qui s'adapte à vos habitudes de consommation",
+    "description": {
+      "fr": "Tarif intelligent qui s'adapte à vos habitudes de consommation",
+      "it": "Tariffa intelligente che si adatta alle tue abitudini di consumo",
+      "es": "Tarifa inteligente que se adapta a tus hábitos de consumo"
+    },
     "provider_id": "fr_004",
     "consumption_pricing": 0.1755,
     "subscription_cost": 120.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "18 months",
-      "price_guarantee": "dynamic"
+      "energy_type": {
+        "fr": "mixte",
+        "it": "mista",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "fr": "18 mois",
+        "it": "18 mesi",
+        "es": "18 meses"
+      },
+      "price_guarantee": {
+        "fr": "dynamique",
+        "it": "dinamica",
+        "es": "dinámica"
+      }
+    },
+    "estimation": {
+      "year": 70.2,
+      "month": 5.85
     }
   }
 ]

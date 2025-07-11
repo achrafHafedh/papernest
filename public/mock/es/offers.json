@@ -3,84 +3,204 @@
     "id": "offer_es_001_01",
     "slug": "energia-espana-hogar",
     "name": "Energía Hogar",
-    "description": "Electricidad para el hogar con precio fijo garantizado",
+    "description": {
+      "es": "Electricidad para el hogar con precio fijo garantizado",
+      "fr": "Électricité pour la maison avec prix fixe garanti",
+      "it": "Elettricità per la casa con prezzo fisso garantito"
+    },
     "provider_id": "es_001",
     "consumption_pricing": 0.195,
     "subscription_cost": 120.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "24 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "it": "Mista",
+        "fr": "Mixte",
+        "es": "Mixta"
+      },
+      "contract_duration": {
+        "it": "24 mesi",
+        "fr": "24 mois",
+        "es": "24 meses"
+      },
+      "price_guarantee": {
+        "it": "Prezzo fisso",
+        "fr": "Prix fixe",
+        "es": "Precio fijo"
+      }
+    },
+    "estimation": {
+      "year": 78.0,
+      "month": 6.5
     }
   },
   {
     "id": "offer_es_001_02",
     "slug": "energia-espana-verde",
     "name": "Energía Verde",
-    "description": "Electricidad 100% renovable certificada",
+    "description": {
+      "es": "Electricidad 100% renovable certificada",
+      "fr": "Électricité 100 % renouvelable certifiée",
+      "it": "Energia 100% rinnovabile certificata"
+    },
     "provider_id": "es_001",
     "consumption_pricing": 0.208,
     "subscription_cost": 145.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "36 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "it": "Verde",
+        "fr": "Verte",
+        "es": "Verde"
+      },
+      "contract_duration": {
+        "it": "36 mesi",
+        "fr": "36 mois",
+        "es": "36 meses"
+      },
+      "price_guarantee": {
+        "it": "Prezzo fisso",
+        "fr": "Prix fixe",
+        "es": "Precio fijo"
+      }
+    },
+    "estimation": {
+      "year": 83.2,
+      "month": 6.93
     }
   },
   {
     "id": "offer_es_001_03",
     "slug": "energia-espana-flexible",
     "name": "Energía Flexible",
-    "description": "Tarifa indexada sin permanencia",
+    "description": {
+      "es": "Tarifa indexada sin permanencia",
+      "fr": "Tarif indexé sans engagement",
+      "it": "Tariffa indicizzata senza impegno"
+    },
     "provider_id": "es_001",
     "consumption_pricing": 0.182,
     "subscription_cost": 95.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "no commitment",
-      "price_guarantee": "indexed"
+      "energy_type": {
+        "it": "Mista",
+        "fr": "Mixte",
+        "es": "Mixta"
+      },
+      "contract_duration": {
+        "it": "Senza impegno",
+        "fr": "Sans engagement",
+        "es": "Sin permanencia"
+      },
+      "price_guarantee": {
+        "it": "Indicizzato",
+        "fr": "Indexé",
+        "es": "Indexado"
+      }
+    },
+    "estimation": {
+      "year": 72.8,
+      "month": 6.07
     }
   },
   {
     "id": "offer_es_002_01",
     "slug": "sol-power-basico",
     "name": "Sol Básico",
-    "description": "Electricidad básica al mejor precio",
+    "description": {
+      "es": "Electricidad básica al mejor precio",
+      "fr": "Électricité basique au meilleur prix",
+      "it": "Elettricità base al miglior prezzo"
+    },
     "provider_id": "es_002",
     "consumption_pricing": 0.188,
     "subscription_cost": 110.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "12 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "it": "Mista",
+        "fr": "Mixte",
+        "es": "Mixta"
+      },
+      "contract_duration": {
+        "it": "12 mesi",
+        "fr": "12 mois",
+        "es": "12 meses"
+      },
+      "price_guarantee": {
+        "it": "Prezzo fisso",
+        "fr": "Prix fixe",
+        "es": "Precio fijo"
+      }
+    },
+    "estimation": {
+      "year": 75.2,
+      "month": 6.27
     }
   },
   {
     "id": "offer_es_002_02",
     "slug": "sol-power-solar",
     "name": "Sol Solar",
-    "description": "Energía solar pura para tu hogar",
+    "description": {
+      "es": "Energía solar pura para tu hogar",
+      "fr": "Énergie solaire pure pour votre maison",
+      "it": "Energia solare pura per la tua casa"
+    },
     "provider_id": "es_002",
     "consumption_pricing": 0.215,
     "subscription_cost": 155.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "36 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "it": "Verde",
+        "fr": "Verte",
+        "es": "Verde"
+      },
+      "contract_duration": {
+        "it": "36 mesi",
+        "fr": "36 mois",
+        "es": "36 meses"
+      },
+      "price_guarantee": {
+        "it": "Prezzo fisso",
+        "fr": "Prix fixe",
+        "es": "Precio fijo"
+      }
+    },
+    "estimation": {
+      "year": 86.0,
+      "month": 7.17
     }
   },
   {
     "id": "offer_es_002_03",
     "slug": "sol-power-inteligente",
     "name": "Sol Inteligente",
-    "description": "Tarifa inteligente que se adapta a tu consumo",
+    "description": {
+      "es": "Tarifa inteligente que se adapta a tu consumo",
+      "fr": "Tarif intelligent qui s’adapte à ta consommation",
+      "it": "Tariffa intelligente che si adatta ai tuoi consumi"
+    },
     "provider_id": "es_002",
     "consumption_pricing": 0.192,
     "subscription_cost": 125.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "18 months",
-      "price_guarantee": "dynamic"
+      "energy_type": {
+        "it": "Mista",
+        "fr": "Mixte",
+        "es": "Mixta"
+      },
+      "contract_duration": {
+        "it": "18 mesi",
+        "fr": "18 mois",
+        "es": "18 meses"
+      },
+      "price_guarantee": {
+        "it": "Prezzo dinamico",
+        "fr": "Prix dynamique",
+        "es": "Precio dinámico"
+      }
+    },
+    "estimation": {
+      "year": 76.8,
+      "month": 6.4
     }
   }
 ]

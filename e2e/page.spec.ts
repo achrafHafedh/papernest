@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("navigate to frensh page when clicking on the link", async ({ page }) => {
-  await page.goto("http://localhost:3000/");
+  await page.goto(`${process.env.NEXT_PUBLIC_URL}`);
 
   await page.getByTestId("Français").click();
   await expect(page).toHaveURL("/fr/offers/fr");
@@ -10,7 +10,7 @@ test("navigate to frensh page when clicking on the link", async ({ page }) => {
 test("Navigate to the Italian page when clicking on the link", async ({
   page,
 }) => {
-  await page.goto("http://localhost:3000/");
+  await page.goto(`${process.env.NEXT_PUBLIC_URL}`);
 
   await page.getByTestId("Italiano").click();
   await expect(page).toHaveURL("/fr/offers/it");
@@ -19,7 +19,7 @@ test("Navigate to the Italian page when clicking on the link", async ({
 test("Navigate to the spanish page when clicking on the link", async ({
   page,
 }) => {
-  await page.goto("http://localhost:3000/");
+  await page.goto(`${process.env.NEXT_PUBLIC_URL}`);
 
   await page.getByTestId("Español").click();
   await expect(page).toHaveURL("/fr/offers/es");

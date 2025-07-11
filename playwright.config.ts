@@ -9,7 +9,7 @@ export default defineConfig({
   },
   fullyParallel: true,
   use: {
-    baseURL: "http://localhost:3000",
+    baseURL: process.env.NEXT_PUBLIC_URL,
     browserName: "chromium",
     headless: true,
     viewport: { width: 1280, height: 720 },

@@ -3,84 +3,204 @@
     "id": "offer_it_001_01",
     "slug": "energia-italiana-casa",
     "name": "Casa Italiana",
-    "description": "Offerta elettrica per la casa con prezzo fisso",
+    "description": {
+      "it": "Offerta elettrica per la casa con prezzo fisso",
+      "fr": "Offre d'électricité pour la maison à prix fixe",
+      "es": "Oferta eléctrica para el hogar con precio fijo"
+    },
     "provider_id": "it_001",
     "consumption_pricing": 0.215,
     "subscription_cost": 135.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "24 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "it": "mista",
+        "fr": "mixte",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "it": "24 mesi",
+        "fr": "24 mois",
+        "es": "24 meses"
+      },
+      "price_guarantee": {
+        "it": "fissa",
+        "fr": "fixe",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 86.0,
+      "month": 7.17
     }
   },
   {
     "id": "offer_it_001_02",
     "slug": "energia-italiana-verde",
     "name": "Verde Italiana",
-    "description": "Energia 100% rinnovabile per un futuro sostenibile",
+    "description": {
+      "it": "Energia 100% rinnovabile per un futuro sostenibile",
+      "fr": "Énergie 100 % renouvelable pour un avenir durable",
+      "es": "Energía 100 % renovable para un futuro sostenible"
+    },
     "provider_id": "it_001",
     "consumption_pricing": 0.228,
     "subscription_cost": 160.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "36 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "it": "verde",
+        "fr": "verte",
+        "es": "verde"
+      },
+      "contract_duration": {
+        "it": "36 mesi",
+        "fr": "36 mois",
+        "es": "36 meses"
+      },
+      "price_guarantee": {
+        "it": "fissa",
+        "fr": "fixe",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 91.2,
+      "month": 7.6
     }
   },
   {
     "id": "offer_it_001_03",
     "slug": "energia-italiana-flex",
     "name": "Flex Italiana",
-    "description": "Tariffa flessibile indicizzata al mercato",
+    "description": {
+      "it": "Tariffa flessibile indicizzata al mercato",
+      "fr": "Tarif flexible indexé sur le marché",
+      "es": "Tarifa flexible indexada al mercado"
+    },
     "provider_id": "it_001",
     "consumption_pricing": 0.205,
     "subscription_cost": 110.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "no commitment",
-      "price_guarantee": "indexed"
+      "energy_type": {
+        "it": "mista",
+        "fr": "mixte",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "it": "nessun impegno",
+        "fr": "sans engagement",
+        "es": "sin compromiso"
+      },
+      "price_guarantee": {
+        "it": "indicizzata",
+        "fr": "indexée",
+        "es": "indexada"
+      }
+    },
+    "estimation": {
+      "year": 82.0,
+      "month": 6.83
     }
   },
   {
     "id": "offer_it_002_01",
     "slug": "volta-power-standard",
     "name": "Volta Standard",
-    "description": "Elettricità a prezzo competitivo per tutti",
+    "description": {
+      "it": "Elettricità a prezzo competitivo per tutti",
+      "fr": "Électricité à prix compétitif pour tous",
+      "es": "Electricidad a precio competitivo para todos"
+    },
     "provider_id": "it_002",
     "consumption_pricing": 0.208,
     "subscription_cost": 125.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "24 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "it": "mista",
+        "fr": "mixte",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "it": "24 mesi",
+        "fr": "24 mois",
+        "es": "24 meses"
+      },
+      "price_guarantee": {
+        "it": "fissa",
+        "fr": "fixe",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 83.2,
+      "month": 6.93
     }
   },
   {
     "id": "offer_it_002_02",
     "slug": "volta-power-solar",
     "name": "Volta Solar",
-    "description": "Energia solare certificata per la tua casa",
+    "description": {
+      "it": "Energia solare certificata per la tua casa",
+      "fr": "Énergie solaire certifiée pour votre maison",
+      "es": "Energía solar certificada para tu hogar"
+    },
     "provider_id": "it_002",
     "consumption_pricing": 0.22,
     "subscription_cost": 150.0,
     "metadata": {
-      "energy_type": "green",
-      "contract_duration": "36 months",
-      "price_guarantee": "fixed"
+      "energy_type": {
+        "it": "verde",
+        "fr": "verte",
+        "es": "verde"
+      },
+      "contract_duration": {
+        "it": "36 mesi",
+        "fr": "36 mois",
+        "es": "36 meses"
+      },
+      "price_guarantee": {
+        "it": "fissa",
+        "fr": "fixe",
+        "es": "fija"
+      }
+    },
+    "estimation": {
+      "year": 88.0,
+      "month": 7.33
     }
   },
   {
     "id": "offer_it_002_03",
     "slug": "volta-power-notte",
     "name": "Volta Notte",
-    "description": "Tariffa bioraria conveniente per le ore notturne",
+    "description": {
+      "it": "Tariffa bioraria conveniente per le ore notturne",
+      "fr": "Tarif bihoraire avantageux pour les heures nocturnes",
+      "es": "Tarifa bioraria conveniente para las horas nocturnas"
+    },
     "provider_id": "it_002",
     "consumption_pricing": 0.195,
     "subscription_cost": 130.0,
     "metadata": {
-      "energy_type": "mixed",
-      "contract_duration": "18 months",
-      "price_guarantee": "dual_rate"
+      "energy_type": {
+        "it": "mista",
+        "fr": "mixte",
+        "es": "mixta"
+      },
+      "contract_duration": {
+        "it": "18 mesi",
+        "fr": "18 mois",
+        "es": "18 meses"
+      },
+      "price_guarantee": {
+        "it": "bioraria",
+        "fr": "bihoraire",
+        "es": "bioraria"
+      }
+    },
+    "estimation": {
+      "year": 78.0,
+      "month": 6.5
     }
   }
 ]

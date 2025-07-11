@@ -1,5 +1,5 @@
 export async function getOffers(country: string) {
-  const res = await fetch(`http://localhost:3000/api/offers/${country}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/offers/${country}`, {
     next: { revalidate: 10 },
   });
   if (!res.ok) {

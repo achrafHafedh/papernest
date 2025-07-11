@@ -37,13 +37,25 @@ export type Offer = {
   id: string;
   slug: string;
   name: string;
-  description: string;
+  description: {
+    [key: string]: string;
+  };
   provider_id: string;
   consumption_pricing: number;
   subscription_cost: number;
   metadata: {
-    energy_type: string;
-    contract_duration: string;
-    price_guarantee: string;
+    energy_type: {
+      [key: string]: string;
+    };
+    contract_duration: {
+      [key: string]: string;
+    };
+    price_guarantee: {
+      [key: string]: string;
+    };
+  };
+  estimation: {
+    year: number;
+    month: number;
   };
 };
