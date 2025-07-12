@@ -57,12 +57,23 @@ export function mapProvidersToOptions(providers: Provider[]): SelectOption[] {
   }));
 }
 
+const sortByEstimationYear = (
+  offerPrev: Offer,
+  offerNext: Offer,
+  sort: string
+): number => {
+  const yearPrev = offerPrev.estimation?.year ?? 0;
+  const yearNext = offerNext.estimation?.year ?? 0;
+
+  return sort === "asc" ? yearPrev - yearNext : yearNext - yearPrev;
+};
+
 export const filterOffers = (
   offers: Offer[],
   filters: FiltersOffers,
   locale: string
 ): Offer[] => {
-  return offers.filter((offer) => {
+  const filteredOffers = offers.filter((offer) => {
     const meta = offer.metadata;
 
     const matchEnergy =
@@ -82,4 +93,13 @@ export const filterOffers = (
 
     return matchEnergy && matchContract && matchPrice && matchProvider;
   });
+
+  const sortDirection = filters.sort?.value;
+  if (sortDirection) {
+    filteredOffers.sort((offerPrev, offerNext) =>
+      sortByEstimationYear(offerPrev, offerNext, sortDirection)
+    );
+  }
+
+  return filteredOffers;
 };

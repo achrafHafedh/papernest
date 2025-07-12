@@ -1,4 +1,4 @@
-import Offers from "@/components/Offers/Offers";
+import OffersWrapper from "@/components/OffersWrapper/OffersWrapper";
 import { getOffers } from "@/lib/getOffers";
 import { getProviders } from "@/lib/getProviders";
 import { Offer, Provider } from "@/types";
@@ -12,5 +12,5 @@ export default async function OffersPage({ params }: Props) {
   const offers: Offer[] = await getOffers(country);
   const providers: Provider[] = await getProviders(country);
 
-  return <Offers offers={offers} providers={providers} />;
+  return <OffersWrapper offers={offers} providers={providers} />;
 }

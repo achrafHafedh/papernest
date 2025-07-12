@@ -17,7 +17,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <SeoHead />
-      <body>
+      <body suppressHydrationWarning={true}>
         <NextIntlClientProvider>
           <Header />
           <main>{children}</main>

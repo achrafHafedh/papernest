@@ -20,7 +20,7 @@ export default function SelectBox({
   clearable = false,
 }: SelectBoxProps) {
   return (
-    <>
+    <div className="">
       <Listbox
         data-testid="container-selectbox-languages"
         value={value}
@@ -99,6 +99,6 @@ export default function SelectBox({
           }}
         />
       )}
-    </>
+    </div>
   );
 }

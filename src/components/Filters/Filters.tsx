@@ -4,7 +4,7 @@ import { useLocale } from "next-intl";
 import { FiltersOffers, Offer, Provider, SelectOption } from "@/types";
 import { extractFiltersByCountry, mapProvidersToOptions } from "@/lib/filters";
 import SelectBox from "../SelectBox/SelectBox";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 type Props = {
   offers: Offer[];
@@ -13,6 +13,17 @@ type Props = {
   value: FiltersOffers;
 };
 
+const sort = [
+  {
+    label: "Croissant",
+    value: "asc",
+  },
+  {
+    label: "Décroissant",
+    value: "desc",
+  },
+];
+
 export default function Filters({
   offers,
   providers,
@@ -20,13 +31,17 @@ export default function Filters({
   value,
 }: Props) {
   const locale = useLocale();
-
   const [filters, setFilter] = useState(value);
 
-  const { contract_duration, energy_type, price_guarantee } =
-    extractFiltersByCountry(offers, locale);
+  const { contract_duration, energy_type, price_guarantee } = useMemo(
+    () => extractFiltersByCountry(offers, locale),
+    [offers, locale]
+  );
 
-  const providersOptions: SelectOption[] = mapProvidersToOptions(providers);
+  const providersOptions: SelectOption[] = useMemo(
+    () => mapProvidersToOptions(providers),
+    [providers]
+  );
 
   const changeFilterHandler = (value: SelectOption | null, key: string) => {
     const newFilters = {
@@ -38,7 +53,7 @@ export default function Filters({
   };
 
   return (
-    <div className="container max-w-3xl mx-auto">
+    <div className="">
       <SelectBox
         onChange={(value) => changeFilterHandler(value, "provider")}
         options={providersOptions}
@@ -65,6 +80,13 @@ export default function Filters({
         options={price_guarantee}
         value={filters.price_guarantee}
         placeholder="Prix"
+        clearable={true}
+      />
+      <SelectBox
+        onChange={(value) => changeFilterHandler(value, "sort")}
+        options={sort}
+        value={filters.sort}
+        placeholder="Trier par prix"
         clearable={true}
       />
     </div>
