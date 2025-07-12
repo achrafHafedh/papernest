@@ -1,10 +1,13 @@
 "use client";
 
-import { useLocale } from "next-intl";
+
+import { useCallback, useMemo, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+
 import { FiltersOffers, Offer, Provider, SelectOption } from "@/types";
 import { extractFiltersByCountry, mapProvidersToOptions } from "@/lib/filters";
+import { sortOptions } from "@/constants";
 import SelectBox from "../SelectBox/SelectBox";
-import { useMemo, useState } from "react";
 
 type Props = {
   offers: Offer[];
@@ -13,23 +16,13 @@ type Props = {
   value: FiltersOffers;
 };
 
-const sort = [
-  {
-    label: "Croissant",
-    value: "asc",
-  },
-  {
-    label: "Décroissant",
-    value: "desc",
-  },
-];
-
 export default function Filters({
   offers,
   providers,
   onChangerFilter,
   value,
 }: Props) {
+  const t = useTranslations();
   const locale = useLocale();
   const [filters, setFilter] = useState(value);
 
@@ -43,14 +36,17 @@ export default function Filters({
     [providers]
   );
 
-  const changeFilterHandler = (value: SelectOption | null, key: string) => {
-    const newFilters = {
-      ...filters,
-      [key]: value,
-    };
-    setFilter(newFilters);
-    onChangerFilter(newFilters);
-  };
+  const changeFilterHandler = useCallback(
+    (value: SelectOption | null, key: string) => {
+      const newFilters = {
+        ...filters,
+        [key]: value,
+      };
+      setFilter(newFilters);
+      onChangerFilter(newFilters);
+    },
+    [filters, onChangerFilter]
+  );
 
   return (
     <div className="">
@@ -58,35 +54,38 @@ export default function Filters({
         onChange={(value) => changeFilterHandler(value, "provider")}
         options={providersOptions}
         value={filters.provider}
-        placeholder="Provider"
+        placeholder={t("offersPage.filters.provider")}
         clearable={true}
       />
       <SelectBox
         onChange={(value) => changeFilterHandler(value, "contract_duration")}
         options={contract_duration}
         value={filters.contract_duration}
-        placeholder="Durée de contrat"
+        placeholder={t("offersPage.filters.contractDuration")}
         clearable={true}
       />
       <SelectBox
         onChange={(value) => changeFilterHandler(value, "energy_type")}
         options={energy_type}
         value={filters.energy_type}
-        placeholder="Energie"
+        placeholder={t("offersPage.filters.energyType")}
         clearable={true}
       />
       <SelectBox
         onChange={(value) => changeFilterHandler(value, "price_guarantee")}
         options={price_guarantee}
         value={filters.price_guarantee}
-        placeholder="Prix"
+        placeholder={t("offersPage.filters.priceGuarantee")}
         clearable={true}
       />
       <SelectBox
         onChange={(value) => changeFilterHandler(value, "sort")}
-        options={sort}
+        options={sortOptions(
+          t("offersPage.filters.asc"),
+          t("offersPage.filters.desc")
+        )}
         value={filters.sort}
-        placeholder="Trier par prix"
+        placeholder={t("offersPage.filters.sort")}
         clearable={true}
       />
     </div>

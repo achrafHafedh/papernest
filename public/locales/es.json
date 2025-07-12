@@ -15,6 +15,15 @@
       "consommation": "Consumo estimado",
       "energy": "Tipo de energía",
       "guarantee": "Garantía del precio"
+    },
+    "filters": {
+      "provider": "Proveedor",
+      "contractDuration": "Duración del contrato",
+      "energyType": "Tipo de energía",
+      "priceGuarantee": "Garantía de precio",
+      "sort": "Ordenar por precio",
+      "asc": "Ascendente",
+      "desc": "Descendente"
     }
   }
 }

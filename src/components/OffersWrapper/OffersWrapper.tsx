@@ -7,6 +7,7 @@ import { filterOffers } from "@/lib/filters";
 import { FiltersOffers, Offer, Provider } from "@/types";
 import Filters from "../Filters/Filters";
 import Offers from "../Offers/Offers";
+import { initFilters } from "@/constants";
 
 type Props = {
   offers: Offer[];
@@ -16,13 +17,7 @@ type Props = {
 export default function OffersWrapper({ offers, providers }: Props) {
   const locale = useLocale();
   const [offersFiltred, setOffersFiltred] = useState(offers);
-  const [filters, setFilters] = useState<FiltersOffers>({
-    contract_duration: null,
-    energy_type: null,
-    price_guarantee: null,
-    provider: null,
-    sort: null,
-  });
+  const [filters, setFilters] = useState<FiltersOffers>(initFilters);
 
   const onChangerFilter = (filtersChoosen: FiltersOffers) => {
     setFilters(filtersChoosen);
