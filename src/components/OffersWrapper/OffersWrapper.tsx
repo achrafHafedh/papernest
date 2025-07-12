@@ -8,6 +8,7 @@ import { FiltersOffers, Offer, Provider } from "@/types";
 import Filters from "../Filters/Filters";
 import Offers from "../Offers/Offers";
 import { initFilters } from "@/constants";
+import NoResults from "../NoResults/NoResults";
 
 type Props = {
   offers: Offer[];
@@ -19,7 +20,7 @@ export default function OffersWrapper({ offers, providers }: Props) {
   const [offersFiltred, setOffersFiltred] = useState(offers);
   const [filters, setFilters] = useState<FiltersOffers>(initFilters);
 
-  const onChangerFilter = (filtersChoosen: FiltersOffers) => {
+  const onChangeFilter = (filtersChoosen: FiltersOffers) => {
     setFilters(filtersChoosen);
     setOffersFiltred(filterOffers(offers, filtersChoosen, locale));
   };
@@ -29,10 +30,14 @@ export default function OffersWrapper({ offers, providers }: Props) {
       <Filters
         offers={offers}
         providers={providers}
-        onChangerFilter={onChangerFilter}
+        onChangeFilter={onChangeFilter}
         value={filters}
       />
-      <Offers offers={offersFiltred} providers={providers} />
+      {offersFiltred.length === 0 ? (
+        <NoResults />
+      ) : (
+        <Offers offers={offersFiltred} providers={providers} />
+      )}
     </div>
   );
 }

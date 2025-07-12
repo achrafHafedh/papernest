@@ -24,6 +24,10 @@
       "sort": "Trier par prix",
       "asc": "Croissant",
       "desc": "Décroissant"
+    },
+    "noResult": {
+      "title": "Aucun résultat trouvé",
+      "text": "Nous n'avons trouvé aucun résultat correspondant à vos filtres. Essayez d'élargir votre recherche ou de réinitialiser les filtres."
     }
   }
 }

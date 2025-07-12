@@ -7,10 +7,10 @@ export const languages: SelectOption[] = [
 ];
 
 export const initFilters: FiltersOffers = {
+  provider: null,
   contract_duration: null,
   energy_type: null,
   price_guarantee: null,
-  provider: null,
   sort: null,
 };
 

@@ -8,20 +8,16 @@ import { FiltersOffers, Offer, Provider, SelectOption } from "@/types";
 import { extractFiltersByCountry, mapProvidersToOptions } from "@/lib/filters";
 import { sortOptions } from "@/constants";
 import SelectBox from "../SelectBox/SelectBox";
+import FilterDisplay from "../FilterDisplay/FilterDisplay";
 
 type Props = {
   offers: Offer[];
   providers: Provider[];
-  onChangerFilter: (value: FiltersOffers) => void;
+  onChangeFilter: (value: FiltersOffers) => void;
   value: FiltersOffers;
 };
 
-export default function Filters({
-  offers,
-  providers,
-  onChangerFilter,
-  value,
-}: Props) {
+export default function Filters({ offers, providers, onChangeFilter, value }: Props) {
   const t = useTranslations();
   const locale = useLocale();
   const [filters, setFilter] = useState(value);
@@ -36,58 +32,56 @@ export default function Filters({
     [providers]
   );
 
-  const changeFilterHandler = useCallback(
+  const changeFilterHandle = useCallback(
     (value: SelectOption | null, key: string) => {
       const newFilters = {
         ...filters,
         [key]: value,
       };
       setFilter(newFilters);
-      onChangerFilter(newFilters);
+      onChangeFilter(newFilters);
     },
-    [filters, onChangerFilter]
+    [filters, onChangeFilter]
   );
 
   return (
-    <div className="">
-      <SelectBox
-        onChange={(value) => changeFilterHandler(value, "provider")}
-        options={providersOptions}
-        value={filters.provider}
-        placeholder={t("offersPage.filters.provider")}
-        clearable={true}
-      />
-      <SelectBox
-        onChange={(value) => changeFilterHandler(value, "contract_duration")}
-        options={contract_duration}
-        value={filters.contract_duration}
-        placeholder={t("offersPage.filters.contractDuration")}
-        clearable={true}
-      />
-      <SelectBox
-        onChange={(value) => changeFilterHandler(value, "energy_type")}
-        options={energy_type}
-        value={filters.energy_type}
-        placeholder={t("offersPage.filters.energyType")}
-        clearable={true}
-      />
-      <SelectBox
-        onChange={(value) => changeFilterHandler(value, "price_guarantee")}
-        options={price_guarantee}
-        value={filters.price_guarantee}
-        placeholder={t("offersPage.filters.priceGuarantee")}
-        clearable={true}
-      />
-      <SelectBox
-        onChange={(value) => changeFilterHandler(value, "sort")}
-        options={sortOptions(
-          t("offersPage.filters.asc"),
-          t("offersPage.filters.desc")
-        )}
-        value={filters.sort}
-        placeholder={t("offersPage.filters.sort")}
-        clearable={true}
-      />
+    <div>
+      <div className="grid grid-cols-5 gap-3">
+        <SelectBox
+          onChange={(value) => changeFilterHandle(value, "provider")}
+          options={providersOptions}
+          value={filters.provider}
+          placeholder={t("offersPage.filters.provider")}
+        />
+        <SelectBox
+          onChange={(value) => changeFilterHandle(value, "contract_duration")}
+          options={contract_duration}
+          value={filters.contract_duration}
+          placeholder={t("offersPage.filters.contractDuration")}
+        />
+        <SelectBox
+          onChange={(value) => changeFilterHandle(value, "energy_type")}
+          options={energy_type}
+          value={filters.energy_type}
+          placeholder={t("offersPage.filters.energyType")}
+        />
+        <SelectBox
+          onChange={(value) => changeFilterHandle(value, "price_guarantee")}
+          options={price_guarantee}
+          value={filters.price_guarantee}
+          placeholder={t("offersPage.filters.priceGuarantee")}
+        />
+        <SelectBox
+          onChange={(value) => changeFilterHandle(value, "sort")}
+          options={sortOptions(
+            t("offersPage.filters.asc"),
+            t("offersPage.filters.desc")
+          )}
+          value={filters.sort}
+          placeholder={t("offersPage.filters.sort")}
+        />
+      </div>
+      <FilterDisplay filters={filters} onChangeFilter={changeFilterHandle} />
     </div>
   );
 }
