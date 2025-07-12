@@ -16,8 +16,8 @@ export default function Header() {
   const locale = useLocale();
   const pathname = usePathname();
 
-  const handleChange = ({ value }: SelectOption) => {
-    router.push(`/${value}/${pathname}`);
+  const handleChange = (value: SelectOption | null) => {
+    router.push(`/${value?.value}/${pathname}`);
   };
 
   const getSelectedLang = (): SelectOption =>

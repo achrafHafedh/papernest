@@ -1,4 +1,8 @@
+import dotenv from "dotenv";
+
 import { defineConfig } from "@playwright/test";
+
+dotenv.config();
 
 export default defineConfig({
   testDir: "./e2e",
@@ -9,7 +13,7 @@ export default defineConfig({
   },
   fullyParallel: true,
   use: {
-    baseURL: process.env.NEXT_PUBLIC_URL,
+    baseURL: process.env.NEXT_PUBLIC_URL || "http://localhost:3000",
     browserName: "chromium",
     headless: true,
     viewport: { width: 1280, height: 720 },
