@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { XMarkIcon } from "@heroicons/react/16/solid";
 
 import { FiltersOffers, SelectOption } from "@/types";
@@ -12,7 +13,7 @@ type Props = {
 export default function FilterDisplay({ filters, onChangeFilter }: Props) {
   return (
     <div className="mt-5">
-      <ul className="flex flex-wrap">
+      <ul className="flex flex-wrap" data-testid="container-display-filter">
         {Object.entries(filters).map(
           (filter, key) =>
             filter[1] && (

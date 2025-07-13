@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { InformationCircleIcon } from "@heroicons/react/16/solid";
 import { Offer, Provider } from "../../types";
 
 export default function OfferCard({
@@ -22,12 +23,12 @@ export default function OfferCard({
             {offer.name}
           </h2>
         </div>
-        <span className="bg-indigo-400  text-white text-xs font-semibold px-3 py-1 rounded-md">
+        <span className="bg-indigo-400 text-center text-white text-xs font-semibold px-3 py-1 rounded-md">
           {provider.display_name}
         </span>
       </div>
 
-      <div className="flex items-center text-sm justify-between mb-4">
+      <div className="text-center lg:flex items-center text-sm justify-between mb-4">
         <div className="text-gray-900 font-bold">
           <span className="text-3xl">{offer.subscription_cost}</span>
           <span className="text-2xl">€</span>/{t("offersPage.offer.year")}
@@ -37,7 +38,7 @@ export default function OfferCard({
           </p>
         </div>
 
-        <div className="text-gray-900 font-bold">
+        <div className="text-gray-900 font-bold my-5 lg:my-0">
           <span className="text-3xl"> {offer.estimation.month}</span>
           <span className="text-2xl">€</span>/{t("offersPage.offer.month")}
           <p className="text-xs text-gray-400">
@@ -68,6 +69,14 @@ export default function OfferCard({
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-right items-center border-t border-gray-200 py-3 text-xs">
+        <InformationCircleIcon
+          aria-hidden="true"
+          className="size-5 text-indigo-400"
+        />
+        <span className="ml-2">{offer.description[locale]}</span>
       </div>
     </div>
   );

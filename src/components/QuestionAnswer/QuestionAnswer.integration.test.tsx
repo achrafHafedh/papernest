@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-img-element */ // for Image next
 import React, { ImgHTMLAttributes } from "react";
 import { render, screen } from "@testing-library/react";
 import QuestionAnswer from "./QuestionAnswer";

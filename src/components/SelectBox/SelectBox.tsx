@@ -28,7 +28,7 @@ export default function SelectBox({
         as="div"
       >
         <div className="relative mt-2">
-          <ListboxButton className="grid w-full cursor-pointer grid-cols-1 rounded-md bg-white py-1.5 pr-2 pl-3 text-left outline sm:text-sm">
+          <ListboxButton className="grid w-full cursor-pointer grid-cols-1 rounded-md bg-white py-1.5 pr-2 pl-3 text-left outline sm:text-sm focus:outline-black active:outline-black">
             <span className="col-start-1 row-start-1 flex items-center gap-3 pr-6">
               {value?.src && (
                 <Image
@@ -58,14 +58,14 @@ export default function SelectBox({
 
           <ListboxOptions
             transition
-            className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 outline text-base shadow-lg sm:text-sm"
+            className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 outline text-base shadow-lg sm:text-sm focus:outline-black active:outline-black"
           >
             {options.map((option, key) => (
               <ListboxOption
                 key={key}
                 value={option}
                 data-testid={`option-${option.value}`}
-                className="group relative cursor-default py-2 pr-9 pl-3 text-gray-900 select-none data-[focus]:bg-indigo-400 data-[focus]:text-white"
+                className="group relative cursor-pointer py-2 pr-9 pl-3 text-gray-900 select-none data-[focus]:bg-indigo-400 data-[focus]:text-white"
               >
                 <div className="flex items-center">
                   {option.src && (
