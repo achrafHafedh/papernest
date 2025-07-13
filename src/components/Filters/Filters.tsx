@@ -1,12 +1,15 @@
 "use client";
 
-
+import React from "react";
 import { useCallback, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 
 import { FiltersOffers, Offer, Provider, SelectOption } from "@/types";
-import { extractFiltersByCountry, mapProvidersToOptions } from "@/lib/filters";
-import { sortOptions } from "@/constants";
+import {
+  extractFiltersByCountry,
+  mapProvidersToOptions,
+} from "../../lib/filters";
+import { sortOptions } from "../../constants";
 import SelectBox from "../SelectBox/SelectBox";
 import FilterDisplay from "../FilterDisplay/FilterDisplay";
 
@@ -17,7 +20,12 @@ type Props = {
   value: FiltersOffers;
 };
 
-export default function Filters({ offers, providers, onChangeFilter, value }: Props) {
+export default function Filters({
+  offers,
+  providers,
+  onChangeFilter,
+  value,
+}: Props) {
   const t = useTranslations();
   const locale = useLocale();
   const [filters, setFilter] = useState(value);
@@ -82,17 +90,18 @@ export default function Filters({ offers, providers, onChangeFilter, value }: Pr
 
   return (
     <div>
-      <div className="grid lg:grid-cols-5 lg:gap-3">
+      <ul className="grid lg:grid-cols-5 lg:gap-3">
         {filterConfigs.map(({ key, options, placeholder, value }) => (
-          <SelectBox
-            key={key}
-            onChange={(value) => changeFilterHandle(value, key)}
-            options={options}
-            value={value}
-            placeholder={placeholder}
-          />
+          <li key={key}>
+            <SelectBox
+              onChange={(value) => changeFilterHandle(value, key)}
+              options={options}
+              value={value}
+              placeholder={placeholder}
+            />
+          </li>
         ))}
-      </div>
+      </ul>
       <FilterDisplay filters={filters} onChangeFilter={changeFilterHandle} />
     </div>
   );

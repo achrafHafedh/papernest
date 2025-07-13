@@ -1,3 +1,4 @@
+import React from "react";
 import { FaceFrownIcon } from "@heroicons/react/24/outline";
 import { useTranslations } from "use-intl";
 

@@ -19,6 +19,7 @@ export default function FilterDisplay({ filters, onChangeFilter }: Props) {
             filter[1] && (
               <li
                 key={key}
+                data-testid={`label-${filter[1]?.value}`}
                 onClick={() => {
                   onChangeFilter(null, filter[0]);
                 }}

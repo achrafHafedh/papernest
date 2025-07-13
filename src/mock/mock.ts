@@ -188,3 +188,37 @@ export const providersMock = [
     country: "france",
   },
 ];
+
+export const translationMock = {
+  homePage: {
+    welcome: {
+      title: "Bienvenue sur papernest !",
+      text: "Simplifiez votre quotidien. Dites adieu au stress administratif.",
+    },
+    question: "Sélectionnez votre pays de résidence",
+  },
+  offersPage: {
+    offer: {
+      logo: "logo",
+      year: "an",
+      engagement: "Engagement de",
+      month: "mois",
+      consommation: "Consommation estimée",
+      energy: "Type d'énergie",
+      guarantee: "Garantie du prix",
+    },
+    filters: {
+      provider: "Fournisseur",
+      contractDuration: "Durée de contrat",
+      energyType: "Type d'énergie",
+      priceGuarantee: "Garantie du prix",
+      sort: "Trier par prix",
+      asc: "Croissant",
+      desc: "Décroissant",
+    },
+    noResult: {
+      title: "Aucun résultat trouvé",
+      text: "Nous n'avons trouvé aucun résultat correspondant à vos filtres. Essayez d'élargir votre recherche ou de réinitialiser les filtres.",
+    },
+  },
+};

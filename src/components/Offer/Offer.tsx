@@ -13,7 +13,10 @@ export default function OfferCard({
   const t = useTranslations();
   const locale = useLocale();
   return (
-    <div className="bg-white rounded-2xl px-6 py-3 shadow-xl border border-gray-200 cursor-pointer mb-5 transition-transform duration-300 hover:scale-105">
+    <div
+      data-testid="offer-card"
+      className="bg-white rounded-2xl px-6 py-3 shadow-xl border border-gray-200 cursor-pointer mb-5 transition-transform duration-300 hover:scale-105"
+    >
       <div className="flex items-center pb-2 border-b border-gray-200 justify-between mb-4">
         <div className="flex items-center">
           <span className="border p-3 mr-2 bg-indigo-400 rounded-md text-white">
@@ -39,10 +42,11 @@ export default function OfferCard({
         </div>
 
         <div className="text-gray-900 font-bold my-5 lg:my-0">
-          <span className="text-3xl"> {offer.estimation.month}</span>
+          <span className="text-3xl">{offer.estimation.month}</span>
           <span className="text-2xl">€</span>/{t("offersPage.offer.month")}
           <p className="text-xs text-gray-400">
-            {t("offersPage.offer.consommation")} {offer.estimation.year}
+            {t("offersPage.offer.consommation")}
+            <span data-testid="price">{offer.estimation.year}</span>
             €/{t("offersPage.offer.year")}
           </p>
         </div>

@@ -62,16 +62,14 @@ describe("Header component", () => {
   it("renders the logo and the language select box", () => {
     render(<Header />);
     expect(screen.getByAltText(/logo/i)).toBeInTheDocument();
-    expect(
-      screen.getByTestId("container-selectbox-languages")
-    ).toBeInTheDocument();
+    expect(screen.getByTestId("container-selectbox")).toBeInTheDocument();
   });
 
   test("calls router.push when language is changed", async () => {
     render(<Header />);
     const user = userEvent.setup();
 
-    const selectbox = screen.getByTestId("selectbox-languages");
+    const selectbox = screen.getByTestId("selectbox");
     await user.click(selectbox);
 
     const italianOption = screen.getByText("Italiano");

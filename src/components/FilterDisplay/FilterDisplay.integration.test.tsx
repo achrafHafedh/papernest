@@ -2,8 +2,8 @@ import React from "react";
 import { vi, describe, it, expect } from "vitest";
 
 import { render, screen } from "@testing-library/react";
+import { filtersMock } from "../../mock/mock";
 import FilterDisplay from "./FilterDisplay";
-import { filtersMock } from "@/mock/mock";
 
 describe("FilterDisplay", () => {
   it("Display chosen filters", async () => {

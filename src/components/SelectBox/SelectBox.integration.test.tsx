@@ -33,16 +33,12 @@ describe("SelectBox", () => {
 
     const user = userEvent.setup();
 
-    expect(screen.getByTestId("selectbox-languages")).toHaveTextContent(
-      "Français"
-    );
+    expect(screen.getByTestId("selectbox")).toHaveTextContent("Français");
 
-    await user.click(screen.getByTestId("selectbox-languages"));
+    await user.click(screen.getByTestId("selectbox"));
 
     await user.click(screen.getByTestId("option-it"));
 
-    expect(screen.getByTestId("selectbox-languages")).toHaveTextContent(
-      "Italiano"
-    );
+    expect(screen.getByTestId("selectbox")).toHaveTextContent("Italiano");
   });
 });

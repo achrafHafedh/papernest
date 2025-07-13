@@ -1,6 +1,7 @@
 "use client";
 
-import OfferCard from "@/components/Offer/Offer";
+import React from "react";
+import OfferCard from "../../components/Offer/Offer";
 import { Offer, Provider } from "@/types";
 
 type Props = {

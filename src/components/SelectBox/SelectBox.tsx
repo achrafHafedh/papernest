@@ -22,7 +22,7 @@ export default function SelectBox({
   return (
     <div className="">
       <Listbox
-        data-testid="container-selectbox-languages"
+        data-testid="container-selectbox"
         value={value}
         onChange={onChange}
         as="div"
@@ -40,12 +40,12 @@ export default function SelectBox({
                 />
               )}
               {value && (
-                <span data-testid="selectbox-languages" className="block">
+                <span data-testid="selectbox" className="block">
                   {value.label}
                 </span>
               )}
               {!value && (
-                <span data-testid="selectbox-languages" className="block">
+                <span data-testid="selectbox" className="block">
                   {placeholder}
                 </span>
               )}

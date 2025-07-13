@@ -1,14 +1,15 @@
 "use client";
 
+import React from "react";
 import { useLocale } from "next-intl";
 import { useState } from "react";
 
-import { filterOffers } from "@/lib/filters";
+import { filterOffers } from "../../lib/filters";
 import { FiltersOffers, Offer, Provider } from "@/types";
 import { AdjustmentsHorizontalIcon } from "@heroicons/react/16/solid";
 import Filters from "../Filters/Filters";
 import Offers from "../Offers/Offers";
-import { initFilters } from "@/constants";
+import { initFilters } from "../../constants";
 import NoResults from "../NoResults/NoResults";
 
 type Props = {
