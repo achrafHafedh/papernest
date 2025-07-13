@@ -44,42 +44,54 @@ export default function Filters({ offers, providers, onChangeFilter, value }: Pr
     [filters, onChangeFilter]
   );
 
+  const filterConfigs = [
+    {
+      key: "provider",
+      options: providersOptions,
+      placeholder: t("offersPage.filters.provider"),
+      value: filters.provider,
+    },
+    {
+      key: "contract_duration",
+      options: contract_duration,
+      placeholder: t("offersPage.filters.contractDuration"),
+      value: filters.contract_duration,
+    },
+    {
+      key: "energy_type",
+      options: energy_type,
+      placeholder: t("offersPage.filters.energyType"),
+      value: filters.energy_type,
+    },
+    {
+      key: "price_guarantee",
+      options: price_guarantee,
+      placeholder: t("offersPage.filters.priceGuarantee"),
+      value: filters.price_guarantee,
+    },
+    {
+      key: "sort",
+      options: sortOptions(
+        t("offersPage.filters.asc"),
+        t("offersPage.filters.desc")
+      ),
+      placeholder: t("offersPage.filters.sort"),
+      value: filters.sort,
+    },
+  ];
+
   return (
     <div>
-      <div className="grid grid-cols-5 gap-3">
-        <SelectBox
-          onChange={(value) => changeFilterHandle(value, "provider")}
-          options={providersOptions}
-          value={filters.provider}
-          placeholder={t("offersPage.filters.provider")}
-        />
-        <SelectBox
-          onChange={(value) => changeFilterHandle(value, "contract_duration")}
-          options={contract_duration}
-          value={filters.contract_duration}
-          placeholder={t("offersPage.filters.contractDuration")}
-        />
-        <SelectBox
-          onChange={(value) => changeFilterHandle(value, "energy_type")}
-          options={energy_type}
-          value={filters.energy_type}
-          placeholder={t("offersPage.filters.energyType")}
-        />
-        <SelectBox
-          onChange={(value) => changeFilterHandle(value, "price_guarantee")}
-          options={price_guarantee}
-          value={filters.price_guarantee}
-          placeholder={t("offersPage.filters.priceGuarantee")}
-        />
-        <SelectBox
-          onChange={(value) => changeFilterHandle(value, "sort")}
-          options={sortOptions(
-            t("offersPage.filters.asc"),
-            t("offersPage.filters.desc")
-          )}
-          value={filters.sort}
-          placeholder={t("offersPage.filters.sort")}
-        />
+      <div className="grid lg:grid-cols-5 lg:gap-3">
+        {filterConfigs.map(({ key, options, placeholder, value }) => (
+          <SelectBox
+            key={key}
+            onChange={(value) => changeFilterHandle(value, key)}
+            options={options}
+            value={value}
+            placeholder={placeholder}
+          />
+        ))}
       </div>
       <FilterDisplay filters={filters} onChangeFilter={changeFilterHandle} />
     </div>

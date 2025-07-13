@@ -13,7 +13,7 @@ export default function Offers({ offers, providers }: Props) {
     providers.find((provider: Provider) => offer.provider_id === provider.id)!;
 
   return (
-    <div className="mt-10">
+    <div>
       {offers.map((offer: Offer) => (
         <OfferCard
           key={offer.id}

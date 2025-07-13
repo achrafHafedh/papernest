@@ -12,7 +12,7 @@ type Props = {
 export default function FilterDisplay({ filters, onChangeFilter }: Props) {
   return (
     <div className="mt-5">
-      <ul className="flex">
+      <ul className="flex flex-wrap">
         {Object.entries(filters).map(
           (filter, key) =>
             filter[1] && (
@@ -21,12 +21,12 @@ export default function FilterDisplay({ filters, onChangeFilter }: Props) {
                 onClick={() => {
                   onChangeFilter(null, filter[0]);
                 }}
-                className="flex cursor-pointer bg-indigo-400 text-white text-xs font-semibold px-2 py-1 rounded-md mr-5"
+                className="flex mr-3 mb-2 items-center justify-between cursor-pointer bg-indigo-400 text-white text-xs font-semibold px-2 py-1 rounded-md"
               >
                 {filter[1]?.label}
                 <XMarkIcon
                   aria-hidden="true"
-                  className="col-start-1 row-start-1 ml-2 size-5 self-center justify-self-end text-white sm:size-4"
+                  className="ml-2 size-5 self-center justify-self-end text-white"
                 />
               </li>
             )

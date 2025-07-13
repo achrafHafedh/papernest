@@ -52,7 +52,7 @@ export default function SelectBox({
             </span>
             <ChevronUpDownIcon
               aria-hidden="true"
-              className="col-start-1 row-start-1 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+              className="row-start-1 size-5 self-center justify-self-end text-gray-500 sm:size-4"
             />
           </ListboxButton>
 
