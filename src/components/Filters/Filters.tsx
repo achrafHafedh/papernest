@@ -92,7 +92,7 @@ export default function Filters({
     <div>
       <ul className="grid lg:grid-cols-5 lg:gap-3">
         {filterConfigs.map(({ key, options, placeholder, value }) => (
-          <li key={key}>
+          <li data-testid={key} key={key}>
             <SelectBox
               onChange={(value) => changeFilterHandle(value, key)}
               options={options}

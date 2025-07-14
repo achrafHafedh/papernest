@@ -5,7 +5,10 @@ import { useTranslations } from "use-intl";
 export default function NoResults() {
   const t = useTranslations();
   return (
-    <div className="flex flex-col items-center justify-center py-16 px-4 text-center">
+    <div
+      data-testid="no-results"
+      className="flex flex-col items-center justify-center py-16 px-4 text-center"
+    >
       <FaceFrownIcon className="h-12 w-12 text-indigo-400 mb-4" />
       <h2 className="text-xl font-semibold text-gray-800">
         {t("offersPage.noResult.title")}
