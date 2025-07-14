@@ -63,6 +63,17 @@ export const filtersMock = {
   },
 };
 
+export const filterSortMock = {
+  provider: null,
+  contract_duration: null,
+  energy_type: null,
+  price_guarantee: null,
+  sort: {
+    label: "Croissant",
+    value: "asc",
+  },
+};
+
 export const offersMock = [
   {
     id: "offer_fr_001_01",

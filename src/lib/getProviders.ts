@@ -2,7 +2,7 @@ export async function getProviders(country: string) {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API}/providers/${country}`,
     {
-      next: { revalidate: 10 },
+      cache: "force-cache",
     }
   );
   if (!res.ok) {
