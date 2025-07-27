@@ -7,6 +7,14 @@ type Props = {
   params: Promise<{ country: string }>;
 };
 
+export async function generateStaticParams() {
+  const locales = ["fr", "es", "it"];
+  const countries = ["fr", "es", "it"];
+  return locales.flatMap((locale) =>
+    countries.map((country) => ({ locale, country }))
+  );
+}
+
 export default async function OffersPage({ params }: Props) {
   const { country } = await params;
   const offers: Offer[] = await getOffers(country);
